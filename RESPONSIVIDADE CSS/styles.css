@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+}
+html{
+    font-family: "Manrope", serif;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    margin: 0;
+}
+button{
+    background-color: #f84646;
+    color: #fff;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0;
+}
+#gohan{
+    margin-bottom: 2.5rem;
+}
+#cabeçalho{
+    background-repeat: no-repeat;
+    background-image: url(/assets/fundocabeçalho.svg);
+    padding: 3rem 7.5rem;
+    height: 105vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#textointro{
+    width: 37.5rem;
+   
+}
+.container{
+   
+    padding: 5rem 7.5rem;
+    text-align: center;
+}
+.contact{
+    margin-top: .5rem;
+}
+.container > p{
+    margin-top: 1.5rem;
+}
+.container > button{
+    margin-top: 2.5rem;
+    transition: opacity  0.5s ease-in-out transforme 0.5s .2s;
+}
+.container > button:hover{
+    opacity: 0.8s;
+    transform: scale(1.1);
+}
+.gradiente{
+    background: linear-gradient(180deg, #fff, #d9d9d9);
+}
+.red{
+    background-color: #f84646;
+    color: #fff;
+}
+.seta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.seta > img{
+    margin: 0 2.5rem;
+}
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    margin: 0 2.5rem 0 0; 
+}
+
+.detalhes:nth-child(even) {
+    margin: 0 2.5rem 0 0;
+}
+
+.goku {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-bottom: 2.5rem; 
+}
+
+.goku:nth-child(even) {
+    margin-top: 7.5rem;
+    flex-direction: row-reverse; 
+}
+
+.goku > .detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 2.5rem; 
+}
+.detalhes > button{
+    font-size: 1rem;
+    margin-top: 10.5rem;
+    
+}
+.detalhes > button:hover{
+    opacity: 0.8s;
+    transform: scale(1.1);
+}
+#rodape{
+    display: flex;
+    text-align: left;
+}
+#rodape > ul > li{
+   list-style: none;
+   margin-bottom: 1rem;
+}
+#rodape > ul > li:last-child{
+    list-style: none;
+    
+ }
+.titulo-rodape{
+    margin-bottom: 1.5rem !important;
+    font-weight: 700;
+}
+#copy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8.5rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+
+.iten > h3{
+    margin-top: .5rem;
+
+}
+.iten > p{
+    margin: .5rem;
+}
+.gray{
+    background-color:#F4F5F7;
+    gap: 5rem;
+}
+.parceiros{
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 1rem ;
+   
+}
+
+#naval1{
+    grid-area: 3/ 1 ;
+    margin-top: .8rem;
+    
+}
+#naval2{
+    grid-area: 2 / 2;
+}
+#naval3{
+    grid-area: 3 / 2;
+}
+
+#naval4{
+    grid-area: 1 / 3;
+}
+#naval5{
+    grid-area: 2 / 3;
+}
+
+#naval6{
+    grid-area: 3 / 3;
+}
+#naval7{
+    grid-area: 2 / 4;
+}
+#naval8{
+    grid-area: 3 / 4;
+}
+#naval9{
+    grid-area: 3 / 5;
+  margin-top: .8rem;
+}
+
+/* Media queries para dispositivos móveis (Smartphones) */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    #cabeçalho {
+        padding: 1rem;
+        height: auto;
+    }
+    #textointro {
+        width: 100%;
+        text-align: center;
+    }
+    .container {
+        padding: 2rem 1rem;
+    }
+    .seta {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .seta > img {
+        transform: rotate(90deg);
+        margin: 1rem 0;
+    }
+    .parceiros {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .detalhes > button {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    #rodapeS > ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .goku{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .goku:nth-child(even){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/* Media queries para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .container {
+        padding: 3rem 2rem;
+    }
+    #cabeçalho {
+        padding: 3rem 2rem;
+    }
+    #textointro {
+        width: 90%;
+        margin: auto;
+    }
+    .parceiros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Media queries para notebooks */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+    .container {
+        padding: 4rem 3rem;
+    }
+    #cabeçalho {
+        padding: 4rem 3rem;
+    }
+    #textointro {
+        width: 75%;
+        margin: auto;
+    }
+    .parceiros {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Media queries para desktops maiores */
+@media only screen and (min-width: 1366px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+    .container {
+        padding: 5rem 7.5rem;
+    }
+    #cabeçalho {
+        padding: 5rem 7.5rem;
+    }
+    #textointro {
+        width: 50%;
+        margin: auto;
+    }
+    .parceiros {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2.5rem;
+    }
+}
